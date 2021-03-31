@@ -38,23 +38,28 @@ namespace Core.ECS.Components
 		public void Update(GameTime gameTime)
 		{
 			// Force + Friction = Mass * Acceleration
-			//acceleration.X = (force.X + friction.X) / Mass;
-			acceleration.X = force.X +  Mass;
+			acceleration.X = (force.X + friction.X) / Mass;
+			acceleration.X = force.X + Mass;
 
-			if (IsGravity)
-			{
-				UpdateWithGravity(gameTime);
-			}
-			else
-			{
-				UpdateWithoutGravity(gameTime);
-			}
+			//if (true)
+			//{
+			//	UpdateWithGravity(gameTime);
+			//}
+			//else
+			//{
+			UpdateWithoutGravity(gameTime);
+			//}
 
-			float delta = (float) gameTime.ElapsedGameTime.TotalSeconds;
+			float delta = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
 			velocity = Vector2.Multiply(acceleration, delta);
-
 			NewPosition = Vector2.Multiply(velocity, delta);
+
+
+			// TODO Gravity Testing
+			// Must check then if player is is floor to avoid applying gravity
+			//Vector2 tempGravity = new Vector2(0, 400);
+			//NewPosition = Vector2.Multiply(Vector2.Add(new Vector2(0, 0), force), delta);
 		}
 
 		private void UpdateWithGravity(GameTime gameTime)
