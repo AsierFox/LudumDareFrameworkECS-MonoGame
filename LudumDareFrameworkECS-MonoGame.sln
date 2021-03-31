@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudumDareFrameworkECS-MonoGame", "LudumDareFrameworkECS-MonoGame.csproj", "{E0538E5F-75B2-45C0-BDC4-306212C4570D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0538E5F-75B2-45C0-BDC4-306212C4570D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0538E5F-75B2-45C0-BDC4-306212C4570D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0538E5F-75B2-45C0-BDC4-306212C4570D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0538E5F-75B2-45C0-BDC4-306212C4570D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C564CDE0-E9BA-4C15-B5F9-E3DB1F5B3466}
+	EndGlobalSection
+EndGlobal
